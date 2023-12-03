@@ -11,10 +11,10 @@ let lkr = `╭───❮ *MR-Malik* ❯
 facebook.com/NasrullahMachi\n
 ╭───❮ *Download* ❯
 │ _${usedPrefix}yts *Youtube search*_
-│ _${usedPrefix}play (Video)_
-│ _${usedPrefix}play2 (Audio)_
-│ _${usedPrefix}ytmp4_
-│ _${usedPrefix}ytmp3_
+│ _${usedPrefix}play (Audio)_
+│ _${usedPrefix}play2 (Video)_
+│ _${usedPrefix}play.1_
+│ _${usedPrefix}play.2_
 │ _${usedPrefix}playdoc (Doc file audio)_
 │ _${usedPrefix}playdoc2 (Doc file video)_
 │ _${usedPrefix}playlist_
