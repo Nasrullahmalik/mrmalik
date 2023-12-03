@@ -1,26 +1,25 @@
 let handler = async (m, { conn, usedPrefix, command}) => {
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `❌ The User Is Not Found In My Database`
-let pp = 'https://i.ibb.co/XJ6gsgV/IMG-20231117-WA0020.jpg'
+let pp = './Assets/IMG-20231117-WA0020.jpg'
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
 let lkr = `╭───❮ *MR-Malik* ❯
-│ _${usedPrefix}alive_
+│ _*MR-Malik 🔛 Menu Ⓜ *_
 ╰─────────────⦁
 \n *Follow me on Facebook:*
 facebook.com/NasrullahMachi\n
 ╭───❮ *Download* ❯
 │ _${usedPrefix}yts *Youtube search*_
-│ _${usedPrefix}play (audio)_
-│ _${usedPrefix}play2 (video)_
-│ _${usedPrefix}play.1_
-│ _${usedPrefix}play.2_
+│ _${usedPrefix}play (Video)_
+│ _${usedPrefix}play2 (Audio)_
+│ _${usedPrefix}ytmp4_
+│ _${usedPrefix}ytmp3_
 │ _${usedPrefix}playdoc (Doc file audio)_
 │ _${usedPrefix}playdoc2 (Doc file video)_
 │ _${usedPrefix}playlist_
 │ _${usedPrefix}video_
 │ _${usedPrefix}video2_
-│ _${usedPrefix}song_
 │ _${usedPrefix}insta *link*_
 │ _${usedPrefix}img_
 │ _${usedPrefix}pinterest_
@@ -32,12 +31,15 @@ facebook.com/NasrullahMachi\n
 │ _${usedPrefix}fb *fb link*_
 │ _${usedPrefix}fb2 *fb link*_
 │ _${usedPrefix}apk *app name*_
+│ _${usedPrefix}modapk_
 │ _${usedPrefix}meme *get random meme*_
 ╰─────────────⦁
 
 ${readMore}
 ╭───❮ *☆ Tools ☆* ❯
 │ _${usedPrefix}chatgpt *text*_
+│ _${usedPrefix}removebg (img bg remover)_
+│ _${usedPrefix}logo_
 │ _${usedPrefix}geo *Geo News*_
 │ _${usedPrefix}cricket_
 │ _${usedPrefix}weather_
@@ -63,7 +65,6 @@ ${readMore}
 
 
 ╭───❮ *☆☆☆ 🇵🇰 ☆☆☆* ❯
-│ _${usedPrefix}logo_
 │ _${usedPrefix}sticker_
 │ _${usedPrefix}take_
 │ _${usedPrefix}smaker_
