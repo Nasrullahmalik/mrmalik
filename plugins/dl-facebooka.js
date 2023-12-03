@@ -16,7 +16,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
     const result = await fg.fbdl(args[0]);
     const tex = `
 ⊱ ─── { *Malik FBDL* } ─── ⊰
-↳ *Hello! 🌟*\n ↳ *📽️ Here is your Tiktok video.*\n\n ↳ *Remember that if you want to convert the video into audio, you can do it easily by responding to the video with the command #tomp3 🎧*
+↳ *Hello! 🌟*\n ↳ *📽️ Here is your Facebook video.*\n\n ↳ *Remember that if you want to convert the video into audio, you can do it easily by responding to the video with the command #tomp3 🎧*
 ⊱ ────── {⋆♬⋆} ────── ⊰`;
 
     const response = await fetch(result.videoUrl);
