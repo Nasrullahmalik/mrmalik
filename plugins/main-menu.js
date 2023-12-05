@@ -39,6 +39,7 @@ ${readMore}
 │ _${usedPrefix}quran *surah No.*_
 │ _${usedPrefix}chatgpt *text*_
 │ _${usedPrefix}bard *text/img*_
+│ _${usedPrefix}imgai (Generate ai img)_
 │ _${usedPrefix}removebg (img bg remover)_
 │ _${usedPrefix}logo_
 │ _${usedPrefix}geo *Geo News*_
