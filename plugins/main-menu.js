@@ -1,11 +1,11 @@
 let handler = async (m, { conn, usedPrefix, command}) => {
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `❌ The User Is Not Found In My Database`
-let pp = './Assets/IMG-20231117-WA0020.jpg'
+let pp = './Assets/IMG-20231118-WA0205.jpg'
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850) 
 let lkr = `╭───❮ *MR-Malik* ❯
-│ _*MR-Malik 🔛 Menu Ⓜ *_
+│ _*_MR-Malik_*  Menu Ⓜ _
 ╰─────────────⦁
 \n *Follow me on Facebook:*
 facebook.com/NasrullahMachi\n
@@ -17,7 +17,6 @@ facebook.com/NasrullahMachi\n
 │ _${usedPrefix}play.2_
 │ _${usedPrefix}playdoc (Doc file audio)_
 │ _${usedPrefix}playdoc2 (Doc file video)_
-│ _${usedPrefix}playlist_
 │ _${usedPrefix}video_
 │ _${usedPrefix}video2_
 │ _${usedPrefix}insta *link*_
@@ -36,8 +35,10 @@ facebook.com/NasrullahMachi\n
 ╰─────────────⦁
 
 ${readMore}
-╭───❮ *☆ Tools ☆* ❯
+╭─❮ *Powerfull Tools* ❯
+│ _${usedPrefix}quran *surah No.*_
 │ _${usedPrefix}chatgpt *text*_
+│ _${usedPrefix}bard *text/img*_
 │ _${usedPrefix}removebg (img bg remover)_
 │ _${usedPrefix}logo_
 │ _${usedPrefix}geo *Geo News*_
@@ -50,7 +51,7 @@ ${readMore}
 ╰─────────────⦁
 
 
-╭───❮ *☆☆☆🇵🇰☆☆☆* ❯
+╭───❮ *Convrt Audio* ❯
 │ _${usedPrefix}bass_
 │ _${usedPrefix}blown_
 │ _${usedPrefix}deep_
@@ -64,7 +65,7 @@ ${readMore}
 ╰─────────────⦁
 
 
-╭───❮ *☆☆☆ 🇵🇰 ☆☆☆* ❯
+╭───❮ *Tools Sticker* ❯
 │ _${usedPrefix}sticker_
 │ _${usedPrefix}take_
 │ _${usedPrefix}smaker_
@@ -73,7 +74,7 @@ ${readMore}
 │ _${usedPrefix}attp_
 ╰─────────────⦁
 
-╭───❮ *☆☆☆ 🇵🇰🇵🇰🇵🇰🇵🇰* ❯
+╭───❮ *Other Tools* ❯
 │ _${usedPrefix}autosticker_
 │ _${usedPrefix}whatmusic_
 │ _${usedPrefix}tempmail_
