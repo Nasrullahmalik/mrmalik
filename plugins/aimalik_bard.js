@@ -24,7 +24,7 @@ let handler = async (_0x4be7c9, {
     try {
       let _0x2e87ed = await Bard(_0x2d15fc);
      const mea_0 = await _0x2e87ed.content;
-const mea = mea_0 +"\n\n*Google Bard AI*\nCreated by:\nNasrullah/923494757886";
+const mea = mea_0 +"\n\n_©️ʙᴀʀᴅ: ʙʏ ɴᴀꜱʀᴜʟʟᴀʜ ᴍᴀᴄʜɪ🦹‍♂️_";
   _0x4be7c9.reply(mea);
     } catch (_0x5d43cb) {
       throw "An error occured";
@@ -36,16 +36,16 @@ const mea = mea_0 +"\n\n*Google Bard AI*\nCreated by:\nNasrullah/923494757886";
       let _0x2c3508 = await _0x2d65cc(_0x16e1ad);
       let _0x17024e = await BardImg(_0x2d15fc, _0x2c3508);
       const mea_0 = await _0x17024e.content ;
-     const mea = mea_0 +"\n\n*Google Bard AI*\nCreated by:\nNasrullah/923494757886";
+     const mea = mea_0 +"\n\n*_©️ʙᴀʀᴅ: ʙʏ ɴᴀꜱʀᴜʟʟᴀʜ ᴍᴀᴄʜɪ🦹‍♂️_";
        _0x4be7c9.reply(mea);
     } else {
       await _0x4be7c9.reply("Only images are supported");
     }
   }
 };
-handler.help = ["barda"];
-handler.tags = ['ai22'];
-handler.command = /^(barda)$/i;
+handler.help = ["bard"];
+handler.tags = ['ai'];
+handler.command = /^(bard)$/i;
 export default handler;
 async function Bard(_0x43fecc) {
   return await bardAi.question({
