@@ -8,7 +8,7 @@ let readMore = more.repeat(850)
 let lkr = `\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
 │ *MR-Malik*  Menu Ⓜ
 │ 
-│ _${usedPrefix}hi
+│ _${usedPrefix}hi_
 │
 ╰─────────────⦁
 \n *Follow me on Facebook:*
