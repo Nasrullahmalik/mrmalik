@@ -3,12 +3,30 @@ let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.m
 if (!(who in global.db.data.users)) throw `❌ The User Is Not Found In My Database`
 let pp = './Assets/IMG-20231118-WA0205.jpg'
 let more = String.fromCharCode(8206)
+let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let readMore = more.repeat(850) 
-let lkr = `╭───❮ *MR-Malik* ❯
-│ _*_MR-Malik_*  Menu Ⓜ _
+let lkr = `\n\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
+│ *MR-Malik*  Menu Ⓜ
 ╰─────────────⦁
 \n *Follow me on Facebook:*
 facebook.com/NasrullahMachi\n
+
+╭─❮ *Tools List* ❯
+│ _${usedPrefix}quran *surah No.*_
+│ _${usedPrefix}chatgpt *text*_
+│ _${usedPrefix}bard *text/img*_
+│ _${usedPrefix}bing *text*_
+│ _${usedPrefix}imgai (Generate ai img)_
+│ _${usedPrefix}removebg (img bg remover)_
+│ _${usedPrefix}logo_
+│ _${usedPrefix}geo *Geo News*_
+│ _${usedPrefix}toanime_
+│ _${usedPrefix}tomp3_
+│ _${usedPrefix}toimg_
+│ _${usedPrefix}tovid_
+╰─────────────⦁
+
+${readMore}
 ╭───❮ *Download* ❯
 │ _${usedPrefix}yts *Youtube search*_
 │ _${usedPrefix}play (Audio)_
@@ -31,26 +49,10 @@ facebook.com/NasrullahMachi\n
 │ _${usedPrefix}fb2 *fb link*_
 │ _${usedPrefix}apk *app name*_
 │ _${usedPrefix}modapk_
-│ _${usedPrefix}meme *get random meme*_
-╰─────────────⦁
-
-${readMore}
-╭─❮ *Powerfull Tools* ❯
-│ _${usedPrefix}quran *surah No.*_
-│ _${usedPrefix}chatgpt *text*_
-│ _${usedPrefix}bard *text/img*_
-│ _${usedPrefix}imgai (Generate ai img)_
-│ _${usedPrefix}removebg (img bg remover)_
-│ _${usedPrefix}logo_
-│ _${usedPrefix}geo *Geo News*_
 │ _${usedPrefix}cricket_
 │ _${usedPrefix}weather_
-│ _${usedPrefix}toanime_
-│ _${usedPrefix}tomp3_
-│ _${usedPrefix}toimg_
-│ _${usedPrefix}tovid_
+│ _${usedPrefix}meme *get random meme*_
 ╰─────────────⦁
-
 
 ╭───❮ *Convrt Audio* ❯
 │ _${usedPrefix}bass_
@@ -87,7 +89,7 @@ ${readMore}
 │ _${usedPrefix}readmore_
 │ _${usedPrefix}ssweb_
 │ _${usedPrefix}tts_
-│ _${usedPrefix}trt_
+│ _${usedPrefix}translate_
 │ _${usedPrefix}wiki_
 │ _${usedPrefix}nowa_
 │ _${usedPrefix}qrmaker_
@@ -97,10 +99,8 @@ ${readMore}
 ╰─────────────⦁
 
 
-╭❮  *🇵🇰☆M-r Malik☆🇵🇰* ❯
-│      ◇○○○○○○○◇
-│     《《《♡♡♡》》》  
-│     Bot
+╭❮  *M-r Malik* ❯
+│        🦹‍♂️
 │ 💡 Created By 
 │ 📎 *NASRULLAH*
 ╰────────────⦁`  
