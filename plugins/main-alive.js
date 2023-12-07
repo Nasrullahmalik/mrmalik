@@ -1,41 +1,54 @@
+let handler = async (m, { conn, usedPrefix, command}) => {
+let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
+let user = global.db.data.users[who]
+let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 
+let caption = `
+╭───[_Mr-Malik_]───╮
+│╭────────────────────
+┴│👋 Hey there, ${name}!
+⬡│⚛ I'm _Mr-Malik_ \n⬡│ I'm up and running! 🚀
+│╰────────────────────
+┠───[ BOT INFO ]────╮
+│╭────────────────────
+┴│       _Mr-Malik_
+⬡│💻 A WhatsApp bot created by:
+⬡│👨‍💻 Nasrullah
+⬡│📞 For any inquiries, contact:
+⬡│📱 wa.me/923494757886
+⬡│
+⬡│🔗 *Contributors*
+⬡│
+⬡│👨‍ 1- Boss Awais Malik 💜
+⬡│📱 wa.me/923478477910
+⬡│
+⬡│👨‍ 2- Boss Usman 💜
+⬡│📱 wa.me/923404699880
+⬡│
+⬡│👨‍ 3- Muhammad Ameen
+⬡│📱 wa.me/923361738889
+⬡│
+⬡│👨‍ 4- Muhammad Yousif 
+⬡│📱 wa.me/923167458766
+⬡│
+⬡│Special Thanks To All
+⬡│ Contributors❤
+│╰────────────────────
+┠───[ HOW TO USE ]────⋆
+┴│💡 Some commands you can use:
+⬡│🔸 .menu \n⬡│- Shows a list\n⬡│ of available commands
+⬡│🔸 .play \n⬡│- Plays a YouTube\n⬡│ video or audio.
+⬡│🔸 .sticker \n⬡│- Converts an \n⬡│image to a sticker
+┬│🔸 .translate \n⬡│- Translates text \n⬡│to other lang
+│╰──────────────
+╰────────═┅═───────
+*Thank you for choosing Mr-Malik! 🌟✨*
+`.trim()
+  m.reply(caption)
+}
+handler.help = ['main']
+handler.tags = ['group']
+handler.command = ['alive', 'hi'] 
 
-let handler = async(m, { conn, text, usedPrefix, command }) => {
-
-    // Sound
-    let name = m.pushName || conn.getName(m.sender)
-    var vn = "https://raw.githubusercontent.com/Kai0071/A17/master/Assets/audio/🔥.mp3"
-    let url = "https://github.com/Guru322/GURU-BOT"
-    let murl = "https://youtu.be/DibiLc17dh0?si=xp9bQ-_frEyDB1-i"
-    let img = "https://cdn.wallpapersafari.com/71/19/7ZfcpT.png"
-    let con = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
-    let doc = {
-        audio: {
-          url: vn
-        },
-        mimetype: 'audio/mp4',
-        ptt: true,
-        waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "Guru",
-    
-        contextInfo: {
-          mentionedJid: [m.sender],
-          externalAdReply: {
-          title: "I AM ALIVE",
-          body: "GURU BOT",
-          thumbnailUrl: img,
-          sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
-          mediaType: 1,
-          renderLargerThumbnail: true
-          }}
-      };
-    
-      await conn.sendMessage(m.chat, doc, { quoted: con });
-    
-    }
-    
-    handler.help = ['alive']
-    handler.tags = ['main']
-    handler.command = /^(alive)$/i 
-
-    export default handler;
+export default handler

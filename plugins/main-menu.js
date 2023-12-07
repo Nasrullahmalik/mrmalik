@@ -5,8 +5,11 @@ let pp = './Assets/IMG-20231118-WA0205.jpg'
 let more = String.fromCharCode(8206)
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let readMore = more.repeat(850) 
-let lkr = `\n\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
+let lkr = `\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
 │ *MR-Malik*  Menu Ⓜ
+│ 
+│ _${usedPrefix}hi
+│
 ╰─────────────⦁
 \n *Follow me on Facebook:*
 facebook.com/NasrullahMachi\n
