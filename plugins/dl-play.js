@@ -19,7 +19,7 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
     try {   
-    const audio = global.API('ApiEmpire', `/api/v2/ytmp3?url=${yt_play[0].url}`)
+    const audio = global.API('ApiEmpire', `/api/v1/ytmp3?url=${yt_play[0].url}`)
     const ttl = await yt_play[0].title
     const buff_aud = await getBuffer(audio);
     const fileSizeInBytes = buff_aud.byteLength;
@@ -37,11 +37,11 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     await conn.sendMessage(m.chat, {audio: buff_aud, mimetype: 'audio/mpeg', fileName: ttl + `.mp3`}, {quoted: m});   
     return;    
     }} catch {
-    throw '_*Mr-Malik - PLAY*_\n\n*[ ℹ️ ] error . Please try again later.*';    
+    throw '_*Mr-Malik - PLAY*_\n\n *[ ℹ️ ] error . Please try again later.*';    
     }}
     if (command == 'play2') {
     try {   
-    const video = global.API('ApiEmpire', `/api/v2/ytmp4?url=${yt_play[0].url}`)
+    const video = global.API('ApiEmpire', `/api/v1/ytmp4?url=${yt_play[0].url}`)
     const ttl2 = await yt_play[0].title
     const buff_vid = await getBuffer(video);
     const fileSizeInBytes2 = buff_vid.byteLength;
