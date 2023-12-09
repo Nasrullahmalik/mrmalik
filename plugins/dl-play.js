@@ -8,7 +8,7 @@ let limit2 = 400;
 let limit_a1 = 50;
 let limit_a2 = 400;
 const handler = async (m, {conn, command, args, text, usedPrefix}) => {
-  if (!text) throw `_*Mr-Malik Play*_\n\n*[ℹ️] The title or link of the YouTube video is required.*\n\n*[💡] Example: #play Mera dil badaldy*\n\nExample2\n #play https://www.youtube.com/watch?v=JLWRZ8eWyZo:\nNote: "#" Replace with ".":_`;    const yt_play = await search(args.join(' '));
+  if (!text) throw `_*Mr-Malik Play*_\n\n*✳ The title or link of the YouTube video is required.*\n\n*[💡] Example: #play Mera dil badaldy*\n\nExample2\n #play https://www.youtube.com/watch?v=JLWRZ8eWyZo:\nNote: "#" Replace with ".":_`;    const yt_play = await search(args.join(' '));
     let additionalText = '';
     if (command === 'play') {
       additionalText = 'audio';
