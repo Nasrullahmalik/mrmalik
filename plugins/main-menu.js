@@ -31,6 +31,7 @@ facebook.com/NasrullahMachi\n
 
 ${readMore}
 ╭───❮ *Download* ❯
+│ _${usedPrefix}y (search video/audio)_
 │ _${usedPrefix}yts (search video/audio)_
 │ _${usedPrefix}play (Audio)_
 │ _${usedPrefix}play2 (Video)_
