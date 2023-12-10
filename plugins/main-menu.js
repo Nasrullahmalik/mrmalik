@@ -37,10 +37,14 @@ ${readMore}
 │ _${usedPrefix}play2 (Video)_
 │ _${usedPrefix}play3 (audio)_
 │ _${usedPrefix}play4 (video)_
+│ _${usedPrefix}play5 (audio)_
+│ _${usedPrefix}play6 (video)_
 │ _${usedPrefix}playdoc (Doc file audio)_
 │ _${usedPrefix}playdoc2 (Doc file video)_
+│ _${usedPrefix}audio_
+│ _${usedPrefix}mp3_
 │ _${usedPrefix}video_
-│ _${usedPrefix}video2_
+│ _${usedPrefix}ytv_
 │ _${usedPrefix}insta (link)_
 │ _${usedPrefix}img_
 │ _${usedPrefix}pinterest_
