@@ -6,7 +6,7 @@ let more = String.fromCharCode(8206)
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let readMore = more.repeat(850) 
 let lkr = `\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
-│ *MR-Malik* Commands List Ⓜ
+│ *MR-Malik*  Menu Ⓜ
 │ 
 │ _${usedPrefix}hi_
 │
@@ -15,51 +15,47 @@ let lkr = `\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik! We're going on an ad
 facebook.com/NasrullahMachi\n
 
 ╭─❮ *Tools List* ❯
-│ _${usedPrefix}quran (surah No.)_
-│ _${usedPrefix}chatgpt (Question)_
-│ _${usedPrefix}bard (text/img)_
-│ _${usedPrefix}bing (Question)_
-│ _${usedPrefix}imgai (Generate ai img)_
-│ _${usedPrefix}removebg (img bg remover)_
-│ _${usedPrefix}logo_ (logo maker)
-│ _${usedPrefix}geo (Geo News)_
-│ _${usedPrefix}toanime_
-│ _${usedPrefix}tomp3_ (video convrt)
-│ _${usedPrefix}toimg_
-│ _${usedPrefix}tovid_
+│ 🔹 *${usedPrefix}QURAN*
+│ 🔹 *${usedPrefix}CHATGPT*
+│ 🔹 *${usedPrefix}BARD*
+│ 🔹 *${usedPrefix}BING*
+│ 🔹 *${usedPrefix}IMGAI*
+│ 🔹 *${usedPrefix}REMOVEBG*
+│ 🔹 *${usedPrefix}LOGO*
+│ 🔹 *${usedPrefix}GEO*
+│ 🔹 *${usedPrefix}TOANIME*
+│ 🔹 *${usedPrefix}TOMP3*
+│ 🔹 *${usedPrefix}TOIMG*
+│ 🔹 *${usedPrefix}TOVID*
 ╰─────────────⦁
 
 ${readMore}
 ╭───❮ *Download* ❯
-│ _${usedPrefix}y (search video/audio)_
-│ _${usedPrefix}yts (search video/audio)_
-│ _${usedPrefix}play (Audio)_
-│ _${usedPrefix}play2 (Video)_
-│ _${usedPrefix}play3 (audio)_
-│ _${usedPrefix}play4 (video)_
-│ _${usedPrefix}play5 (audio)_
-│ _${usedPrefix}play6 (video)_
-│ _${usedPrefix}playdoc (Doc file audio)_
-│ _${usedPrefix}playdoc2 (Doc file video)_
-│ _${usedPrefix}audio_
-│ _${usedPrefix}mp3_
-│ _${usedPrefix}video_
-│ _${usedPrefix}ytv_
-│ _${usedPrefix}insta (link)_
-│ _${usedPrefix}img_
-│ _${usedPrefix}pinterest_
-│ _${usedPrefix}mediafire (link)_
-│ _${usedPrefix}gdrive (link)_
-│ _${usedPrefix}twitter (link)_
-│ _${usedPrefix}tiktok (link)_
-│ _${usedPrefix}tiktokstalk_
-│ _${usedPrefix}fb (fb link)_
-│ _${usedPrefix}fb2 (fb link)_
-│ _${usedPrefix}apk (app name)_
-│ _${usedPrefix}modapk_
-│ _${usedPrefix}cricket_
-│ _${usedPrefix}weather_
-│ _${usedPrefix}meme (get random meme)_
+│ 🔹 *${usedPrefix}YTS*
+│ 🔹 *${usedPrefix}yts2*
+│ 🔹 *${usedPrefix}play*
+│ 🔹 *${usedPrefix}play2*
+│ 🔹 *${usedPrefix}play3*
+│ 🔹 *${usedPrefix}play4*
+│ 🔹 *${usedPrefix}playdoc*
+│ 🔹 *${usedPrefix}playdoc2*
+│ 🔹 *${usedPrefix}video*
+│ 🔹 *${usedPrefix}video2* (soon)
+│ 🔹 *${usedPrefix}insta* (soon)
+│ 🔹 *${usedPrefix}img*
+│ 🔹 *${usedPrefix}pinterest*
+│ 🔹 *${usedPrefix}mediafire*
+│ 🔹 *${usedPrefix}gdrive*
+│ 🔹 *${usedPrefix}twitter*
+│ 🔹 *${usedPrefix}tiktok*
+│ 🔹 *${usedPrefix}tiktokstalk*
+│ 🔹 *${usedPrefix}fb*
+│ 🔹 *${usedPrefix}fb2*
+│ 🔹 *${usedPrefix}apk*
+│ 🔹 *${usedPrefix}modapk*
+│ 🔹 *${usedPrefix}cricket*
+│ 🔹 *${usedPrefix}weather*
+│ 🔹 *${usedPrefix}meme*
 ╰─────────────⦁
 
 ╭───❮ *Convrt Audio* ❯
@@ -77,7 +73,7 @@ ${readMore}
 
 
 ╭───❮ *Tools Sticker* ❯
-│ _${usedPrefix}sticker_ (reply to img)
+│ _${usedPrefix}sticker_
 │ _${usedPrefix}take_
 │ _${usedPrefix}smaker_
 │ _${usedPrefix}getsticker_
