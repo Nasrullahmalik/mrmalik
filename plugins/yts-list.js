@@ -18,7 +18,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     const teks = results.all.map((v, i) => {
       const link = v.url;
       vids_.urls.push(link);
-      return `*Reply With -> ${i + 1}* \n
+      return `\n*Reply With -> ${i + 1}* 
 ↳ 🫐 *_Title :_* ${v.title}
 ↳ 🕒 *_Duration :_* ${v.timestamp}
 ↳ 📥 *_Uploaded :_* ${v.ago}`;
