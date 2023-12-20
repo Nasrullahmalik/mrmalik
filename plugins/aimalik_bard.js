@@ -19,7 +19,7 @@ let handler = async (_0x4be7c9, {
   }
   let _0x40ed32 = _0x4be7c9.quoted ? _0x4be7c9.quoted : _0x4be7c9;
   let _0x31ff36 = (_0x40ed32.msg || _0x40ed32).mimetype || '';
-  await _0x4be7c9.react('💸');
+  await _0x4be7c9.react('🦹🏻‍♂️');
   if (!_0x31ff36) {
     try {
       let _0x2e87ed = await Bard(_0x2d15fc);
