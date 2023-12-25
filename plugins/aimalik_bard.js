@@ -43,9 +43,9 @@ const mea = mea_0 +"\n\n_©️ʙᴀʀᴅ: ʙʏ ɴᴀꜱʀᴜʟʟᴀʜ ᴍᴀᴄ�
     }
   }
 };
-handler.help = ["bard"];
+handler.help = ["bard2"];
 handler.tags = ['ai'];
-handler.command = /^(bard)$/i;
+handler.command = /^(bard2)$/i;
 export default handler;
 async function Bard(_0x43fecc) {
   return await bardAi.question({
