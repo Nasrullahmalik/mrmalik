@@ -6,11 +6,6 @@ let more = String.fromCharCode(8206)
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let readMore = more.repeat(850) 
 let lkr = `\n🚀 *_Buckle up ${name}, Welcome To Mr-Malik! We're going on an adventure!_* 🚀\n\n╭───❮ *MR-Malik* ❯
-│ *MR-Malik*  Menu Ⓜ
-│ 
-│ _${usedPrefix}hi_
-│
-╰─────────────⦁
 \n *Follow me on Facebook:*
 facebook.com/NasrullahMachi\n
 
@@ -18,7 +13,10 @@ facebook.com/NasrullahMachi\n
 │ 🔹 *${usedPrefix}QURAN*
 │ 🔹 *${usedPrefix}CHATGPT*
 │ 🔹 *${usedPrefix}BARD*
-│ 🔹 *${usedPrefix}BING*
+│ 🔹 *${usedPrefix}BARD2*
+│ 🔹 *${usedPrefix}BING* (English only)
+│ 🔹 *${usedPrefix}BING2*
+│ 🔹 *${usedPrefix}GEMINI* (Eglish only)
 │ 🔹 *${usedPrefix}IMGAI*
 │ 🔹 *${usedPrefix}REMOVEBG*
 │ 🔹 *${usedPrefix}LOGO*
