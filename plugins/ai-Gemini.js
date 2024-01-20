@@ -13,7 +13,7 @@ const handler = async (m, {conn, text, usedPrefix, command}) => {
     const data = await response.json();
 
     if (data.status && data.data) {
-      const respuestaAPI = data.data + "_©️Gemini: ʙʏ ɴᴀꜱʀᴜʟʟᴀʜ ᴍᴀᴄʜɪ🦹‍♂️_";
+      const respuestaAPI = data.data + "/n_©️Gemini: ʙʏ ɴᴀꜱʀᴜʟʟᴀʜ ᴍᴀᴄʜɪ🦹‍♂️_";
       conn.reply(m.chat, respuestaAPI, m);
     } else {
       throw '*Server is busy now. Try again Later.*';
